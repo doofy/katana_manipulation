@@ -195,8 +195,8 @@ void GraspPlanner::execute_cb(const object_manipulation_msgs::GraspPlanningGoalC
   for (std::vector<tf::Transform>::iterator it = grasp_tfs.begin(); it != grasp_tfs.end(); ++it)
   {
     // skip grasps without IK solution
-    if (get_ik(*it).size() == 0)
-      continue;
+    //if (get_ik(*it).size() == 0)
+    //  continue;
 
     object_manipulation_msgs::Grasp grasp;
 
